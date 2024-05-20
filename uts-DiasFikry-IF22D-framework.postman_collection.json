@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "b3651ef1-c0f1-4b7e-af6a-e7545a39a8bd",
+		"name": "uts-framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33790460"
+	},
+	"item": [
+		{
+			"name": "create categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNTUzNiwiZXhwIjoxNzE2MjIyNzM2fQ.NyGyXYLoJzts5oUY7TVld0OxRfyilJtK7AUajvX0S0Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Si ahmad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/categories",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNTc5MCwiZXhwIjoxNzE2MjIyOTkwfQ.SvtIAQwOyEnXkgxF94xZAWBVd3l3BUaMUleVwZKIFW0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Supra mamah\",\r\n    \"description\" : \"Motor kesayangan\",\r\n    \"price\" : 200000,\r\n    \"image\" : \"Gambar  andalan Racing\",\r\n    \"category_id\" : 1,\r\n    \"expired_at\" : \"9939-11-21\",\r\n    \"modified_by\" : \"admin@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/product",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Takayama\",\r\n    \"email\" : \"takayama@gmail.com\",\r\n    \"password\" : \"Gaia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/register",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiVGFrYXlhbWEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNjIxNzE4MiwiZXhwIjoxNzE2MjI0MzgyfQ.ZYLUbobMRUwEsq3FyqjdGWd-NSPHIMWBzSHvav4Lpk4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\" : \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/login",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showall read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiVGFrYXlhbWEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNjIxNzE4MiwiZXhwIjoxNzE2MjI0MzgyfQ.ZYLUbobMRUwEsq3FyqjdGWd-NSPHIMWBzSHvav4Lpk4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/product",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjEzNjQyNiwiZXhwIjoxNzE2MTQzNjI2fQ.ueuOxzZ9bfRf5ZQ7OsyEilfJICiuqNU9QOrXXrL0diQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"CB 1000RR\",\r\n    \"description\" : \"Motor Matic\",\r\n    \"price\" : 1000000000,\r\n    \"image\" : \"Gambar  CBR\",\r\n    \"category_id\" : 1,\r\n    \"expired_at\" : \"9999-12-31\",\r\n    \"modified_by\" : \"admin@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/product/2",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiVGFrYXlhbWEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNjIxNzI1OCwiZXhwIjoxNzE2MjI0NDU4fQ.ZaprsNRg_CIsSEq3RmxeADDZFKY1ntkCFSfDL0mX74Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/product/7",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"product",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNzUxNCwiZXhwIjoxNzE2MjI0NzE0fQ.IDw8-VXZ_VjC5ajuviytqjYV6yhQGOCLS7SFwEKOLAU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/categories",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNzUxNCwiZXhwIjoxNzE2MjI0NzE0fQ.IDw8-VXZ_VjC5ajuviytqjYV6yhQGOCLS7SFwEKOLAU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Si Ismail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/categories/2",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNzUxNCwiZXhwIjoxNzE2MjI0NzE0fQ.IDw8-VXZ_VjC5ajuviytqjYV6yhQGOCLS7SFwEKOLAU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/categories/4",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"categories",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register with auth google",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/userinfo.email",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "745059358971-tp5cnh4aler9nqjjigtm929ts6065h4d.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.google.com/o/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/auth",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://oauth.pstmn.io/v1/callback",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "UtsFramework_DiasFikryN_1085",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://diasutsframework.sipsimpangan.com/public/api/auth/google",
+					"protocol": "https",
+					"host": [
+						"diasutsframework",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"auth",
+						"google"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
